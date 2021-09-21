@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { Component } from 'react';
 import Header from './Header.js';
@@ -9,7 +8,6 @@ export default class App extends Component {
   state = {
     keyword: ''
   }
-  
 
   selectorChange = (e) => {
     this.setState({keyword: e.target.value});
@@ -19,7 +17,7 @@ export default class App extends Component {
     const filteredImages = images.filter(image => (!this.state.keyword) || image.keyword === this.state.keyword);
 
     const allKeywords = images.map(image => image.keyword);
-    const filteredOptions = [...new Set(allKeywords)];
+    const filteredOptions = [...new Set(allKeywords)]; //remove duplicates
     filteredOptions.sort();
 
     return (
@@ -39,3 +37,5 @@ export default class App extends Component {
     );
   }
 }
+
+// now I know that main branches aren't made by default!
