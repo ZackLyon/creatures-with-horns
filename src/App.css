@@ -12,7 +12,8 @@
 }
 
 body {
-  background-image: url('http://localhost:3000/background.jpg');  
+  /* background-image: url('http://localhost:3000/background.jpg');   this is for local npm start*/
+  background-image: url('/background.jpg'); 
   background-repeat: none;
   background-size: cover;
   width: 100vw;

@@ -7,6 +7,9 @@ export default class ImageList extends Component {
         return (
             <div className="images-container">
                 {
+                    //check if any images were passed in
+                    //if not, display error message
+                    //if so, show filtered images
                     this.props.selectedImages.length === 0
                     ? <div className="no-images">
                         <h1>No</h1> 
