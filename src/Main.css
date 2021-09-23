@@ -131,7 +131,7 @@ select:focus {
   -webkit-text-stroke-width: 1px;
 }
 
-.acknowledgement {
+.acknowledgement, .link-to-splash {
   color: white;
   font-size: 30px;
   font-family: 'Permanent Marker', cursive;
